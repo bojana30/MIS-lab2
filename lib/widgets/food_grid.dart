@@ -15,7 +15,13 @@ class FoodGrid extends StatefulWidget {
 class _FoodGridState extends State<FoodGrid> {
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return GridView.builder(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        mainAxisSpacing: 12,
+        crossAxisSpacing: 12,
+        childAspectRatio: 0.75,
+      ),
       itemCount: widget.foods.length,
       physics: const BouncingScrollPhysics(),
       itemBuilder: (context, index) {

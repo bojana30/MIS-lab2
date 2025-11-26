@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../models/category.dart';
 import '../services/api_service.dart';
-import '../widgets/category_grid.dart';
+import '../widgets/category_list.dart';
 
 class MyHomePage extends StatefulWidget {
   final String title;

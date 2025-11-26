@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../models/food.dart';
@@ -21,28 +20,25 @@ class FoodCard extends StatelessWidget {
           border: Border.all(color: Colors.pink.shade300, width: 2),
         ),
         padding: const EdgeInsets.all(10),
-        child: Row(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
               child: Image.network(
                 food.thumbnail,
-                width: 90,
-                height: 90,
+                width: double.infinity,
+                height: 120,
                 fit: BoxFit.cover,
               ),
             ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Text(
-                food.name,
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-              ),
+            const SizedBox(height: 10),
+            Text(
+              food.name,
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
             ),
           ],
         ),

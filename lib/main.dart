@@ -2,7 +2,6 @@ import 'package:android_studio_lab2/screens/details.dart';
 import 'package:android_studio_lab2/screens/home.dart';
 import 'package:android_studio_lab2/screens/random_recipe.dart';
 import 'package:android_studio_lab2/screens/recipe.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {

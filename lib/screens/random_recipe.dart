@@ -1,5 +1,4 @@
 import 'package:android_studio_lab2/widgets/recipe_card.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../models/recipe.dart';
