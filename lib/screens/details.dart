@@ -44,6 +44,14 @@ class _DetailsState extends State<DetailsPage> {
           ),
         ),
         iconTheme: const IconThemeData(color: Colors.white),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, "/favorite_recipes", arguments: _foods);
+            },
+            icon: const Icon(Icons.favorite),
+          ),
+        ],
       ),
       body: _isLoading
           ? const Center(child: CircularProgressIndicator())
